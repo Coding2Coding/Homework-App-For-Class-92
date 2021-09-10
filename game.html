@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Homework App For Class 91</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body id="bodyTag">
+        <h4 id="player1Username"></h4>
+        <span id="player1Score"></span>
+        <br>
+        <br>
+        <h4 id="player2Username"></h4>
+        <span id="player2Score"></span>
+        <br>
+        <br>
+        <div class="container">
+            <center>
+                <h2 id="mathQuiz">Math Quiz!!</h2>
+                <br>
+                <br>
+                <h4 id="questionTurn"></h4>
+                <h4 id="answerTurn"></h4>
+                <br>
+                <br>
+                <div id="output">
+                    <label style="font-family: fantasy; color: lightskyblue; font-size: 20px;"id="question"></label>
+                    <br>
+                    <br>
+                    <label style="font-family: fantasy; color: lightskyblue; font-size: 20px;">Answer: </label>
+                    <input style="font-family: fantasy;" id="answer" placeholder="Enter Answer">
+                    <br>
+                    <br>
+                    <button class="btn btn-info" id="checkAnswer" onclick="checkAnswer()">Check</button>
+                </div>
+                <br>
+                <br>
+                <label id="firstNumber">First Number: </label>
+                <br>
+                <br>
+                <input id="firstNumberInput">
+                <br>
+                <br>
+                <label id="secondNumber">Second Number: </label>
+                <br>
+                <br>
+                <input id="secondNumberInput">
+                <br>
+                <br>
+                <button id="sendButton" class="btn btn-info" onclick="send()">Send</button>
+            </center>
+        </div>
+    </body>
+    <script src="game.js"></script>
+</html>
